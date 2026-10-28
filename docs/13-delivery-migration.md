@@ -42,4 +42,10 @@
 
 本轮验证是离线 Mock 流程验证，不等同于真实模型服务、真实 Qdrant、真实 CUDA 或生产数据验收。代码中保留了真实 provider、向量数据库和混合检索的接口与实现边界，但本次没有安装依赖、调用外部模型或连接真实后端。
 
-提交题号、GitHub URL、最终 commit SHA 及私库评审权限属于真实提交环境信息，当前不编造。
+## 目录与仓库
+
+- 正式交付目录：`03-企业知识问答 Agent`，题号为 `03`。
+- GitHub 公开仓库：https://github.com/cheny1295/03-enterprise-knowledge-qa-agent 。
+- 默认分支：`main`，公开仓库不需要额外私库评审授权。
+- 初始代码提交：`e1ef3bc6f1ae70ecd8db6c7f37204e3e467335e9`；后续发布信息以普通文档提交补充，不改写该初始提交。
+- 当前检出版本的完整 commit SHA 可通过 `git rev-parse HEAD` 获取，最终交付版本以远端 `main` 的实际提交记录为准。

@@ -100,9 +100,10 @@ docs/                      # 需求、方案、评估、AI 使用和复盘
 - 选题名称：企业知识问答 Agent
 - 题号：03
 - 实际用时：约 5 小时
-- GitHub URL：待创建或确认仓库后填写
-- 最终 commit SHA：待提交后填写，当前未创建提交
-- 私有仓库评审权限：待提交者按实际仓库配置确认
+- GitHub URL：https://github.com/cheny1295/03-enterprise-knowledge-qa-agent
+- 仓库可见性：公开，评审无需私库授权
+- 默认分支：`main`
+- 交付版本：以 `main` 分支提交为准；本地运行 `git rev-parse HEAD` 获取当前检出版本的完整 commit SHA
 
 ## 7. 个人贡献重点
 
