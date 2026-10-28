@@ -1,0 +1,12 @@
+{
+  "description": "改写问题：使用相似表达查询期限",
+  "request": {
+    "question": "差旅费用产生后最迟多少天交报销申请",
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "fault_injection": null
+}

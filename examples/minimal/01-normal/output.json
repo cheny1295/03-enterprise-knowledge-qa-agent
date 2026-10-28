@@ -1,0 +1,53 @@
+{
+  "case": "01-normal",
+  "description": "明确答案：单一 D01 来源",
+  "request": {
+    "question": "报销期限多久",
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "output": {
+    "request_id": "req-0fea7fbed070499e9f6255d3a066928b",
+    "tenant_id": "tenant-A",
+    "routing": {
+      "route": "deep_query",
+      "reason": "需要查询当前租户知识",
+      "faq_topic_id": null,
+      "attempted_route": "deep_query",
+      "effective_route": "deep_query"
+    },
+    "answer_kind": "factual",
+    "status": "completed",
+    "answer": "差旅报销应在费用发生后30天内提交。",
+    "claims": [
+      {
+        "text": "差旅报销应在费用发生后30天内提交。",
+        "evidence_ids": [
+          "E-755bd7c7de844505b9af3b333c106bbe"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E-755bd7c7de844505b9af3b333c106bbe",
+        "document_id": "D01",
+        "version_id": "D01-v1",
+        "version_date": "2026-03-01",
+        "section_id": "4.2",
+        "quote": "差旅报销应在费用发生后30天内提交。"
+      }
+    ],
+    "gaps": [],
+    "follow_up_question": null,
+    "conflict_assessments": [],
+    "warnings": [],
+    "error_code": null,
+    "stop_reason": "finished_with_evidence",
+    "snapshot_id": "snap-42fbe8f8f87e40208b07163fb2650869",
+    "trace_id": "trace-req-0fea7fbed070499e9f6255d3a066928b"
+  },
+  "trace": "runtime/traces/74656e616e742d41/req-0fea7fbed070499e9f6255d3a066928b.jsonl"
+}

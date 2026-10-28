@@ -1,0 +1,39 @@
+{
+  "case": "03-outside",
+  "description": "资料外问题：现有资料不覆盖设备领用",
+  "request": {
+    "question": "办公设备领用地点",
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "output": {
+    "request_id": "req-90717b205bef44ebbf6d75ef8151c962",
+    "tenant_id": "tenant-A",
+    "routing": {
+      "route": "deep_query",
+      "reason": "no_supporting_evidence",
+      "faq_topic_id": null,
+      "attempted_route": "deep_query",
+      "effective_route": "fallback"
+    },
+    "answer_kind": "fallback",
+    "status": "insufficient_evidence",
+    "answer": "当前资料无法支持这个问题的确定回答。",
+    "claims": [],
+    "citations": [],
+    "gaps": [
+      "没有找到支持当前问题的资料"
+    ],
+    "follow_up_question": null,
+    "conflict_assessments": [],
+    "warnings": [],
+    "error_code": null,
+    "stop_reason": "no_supporting_evidence",
+    "snapshot_id": "snap-a20ab18f30a3443ab30c9a4a4698c871",
+    "trace_id": "trace-req-90717b205bef44ebbf6d75ef8151c962"
+  },
+  "trace": "runtime/traces/74656e616e742d41/req-90717b205bef44ebbf6d75ef8151c962.jsonl"
+}

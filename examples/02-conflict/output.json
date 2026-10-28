@@ -1,0 +1,68 @@
+{
+  "request_id": "req-1e43cb72948e4920b997abf393b0cff4",
+  "tenant_id": "tenant-A",
+  "routing": {
+    "route": "deep_query",
+    "reason": "clarification_required",
+    "faq_topic_id": "reimbursement-deadline",
+    "attempted_route": "deep_query",
+    "effective_route": "fallback"
+  },
+  "answer_kind": "clarification",
+  "status": "needs_clarification",
+  "answer": "当前已读取的制度存在未决冲突，请确认适用的制度范围或版本。",
+  "claims": [
+    {
+      "text": "差旅报销应在费用发生后30天内提交。",
+      "evidence_ids": ["E-f6580d2de3a0495d91db7801aff25bba"]
+    },
+    {
+      "text": "差旅报销应在费用发生后15天内提交。",
+      "evidence_ids": ["E-85fbc2453cc34a89826ef89bdac9ef05"]
+    }
+  ],
+  "citations": [
+    {
+      "evidence_id": "E-85fbc2453cc34a89826ef89bdac9ef05",
+      "document_id": "D02",
+      "version_id": "D02-v1",
+      "version_date": "2026-04-01",
+      "section_id": "2.1",
+      "quote": "差旅报销应在费用发生后15天内提交。"
+    },
+    {
+      "evidence_id": "E-f6580d2de3a0495d91db7801aff25bba",
+      "document_id": "D01",
+      "version_id": "D01-v1",
+      "version_date": "2026-03-01",
+      "section_id": "4.2",
+      "quote": "差旅报销应在费用发生后30天内提交。"
+    }
+  ],
+  "gaps": ["适用制度或版本未明确"],
+  "follow_up_question": "请确认适用的制度范围或版本。",
+  "conflict_assessments": [
+    {
+      "assessment_id": "conflict-1ae49670abd646e495f08eca1b264642",
+      "tenant_id": "tenant-A",
+      "request_id": "req-1e43cb72948e4920b997abf393b0cff4",
+      "snapshot_id": "snap-3bb143d3228344a28e2b3b65dc3c8d8d",
+      "candidate_ids": [
+        "C-b89744c91b5e4314bf63e5bb8e894bc5",
+        "C-fee67aabb10a45ba9ab07b3283eae552"
+      ],
+      "evidence_ids": [
+        "E-f6580d2de3a0495d91db7801aff25bba",
+        "E-85fbc2453cc34a89826ef89bdac9ef05"
+      ],
+      "relation": "unresolved_conflict",
+      "basis_fields": [],
+      "unresolved_gaps": ["适用条件或来源关系尚未确认"]
+    }
+  ],
+  "warnings": [],
+  "error_code": null,
+  "stop_reason": "clarification_required",
+  "snapshot_id": "snap-3bb143d3228344a28e2b3b65dc3c8d8d",
+  "trace_id": "trace-req-1e43cb72948e4920b997abf393b0cff4"
+}

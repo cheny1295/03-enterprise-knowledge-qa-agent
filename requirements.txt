@@ -1,0 +1,8 @@
+# 离线 CLI、最小示例与 unittest 只依赖 Python 3.10+ 标准库，无第三方必装包。
+# 不使用第三方 Agent 框架。
+# 可选真实向量后端依赖（未安装/验证，不声称有锁定的可复现版本组合）：
+# qdrant-client
+# sentence-transformers
+# torch
+# 启用真实编码前需准备兼容 CUDA 的环境、缓存权重及固定 revision，不回退 CPU。
+# 真实 HTTPS JSON provider 使用标准库 urllib，不需额外 SDK。

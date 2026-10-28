@@ -1,0 +1,12 @@
+{
+  "description": "文档冲突：D01 与 D02 的期限不同",
+  "request": {
+    "question": "报销期限多久",
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "multi",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "fault_injection": null
+}

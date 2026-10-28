@@ -1,0 +1,6 @@
+{
+  "mode": "mock",
+  "question": "报销期限多久",
+  "data": "data/documents.jsonl",
+  "faqs": "config/demo-faqs.json"
+}

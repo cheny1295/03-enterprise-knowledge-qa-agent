@@ -1,0 +1,12 @@
+{
+  "description": "资料外问题：现有资料不覆盖设备领用",
+  "request": {
+    "question": "办公设备领用地点",
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "fault_injection": null
+}

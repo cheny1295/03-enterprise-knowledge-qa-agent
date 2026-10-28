@@ -1,0 +1,63 @@
+{
+  "case": "05-history",
+  "description": "上下文追问：从上一条用户问题补足对象",
+  "request": {
+    "question": "那它的申请期限呢",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "差旅报销有什么要求"
+      },
+      {
+        "role": "assistant",
+        "content": "请具体说明想查询的制度事项。"
+      }
+    ],
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "output": {
+    "request_id": "req-1f1a0d40b922413281edba48a90c1cb1",
+    "tenant_id": "tenant-A",
+    "routing": {
+      "route": "deep_query",
+      "reason": "需要查询当前租户知识",
+      "faq_topic_id": null,
+      "attempted_route": "deep_query",
+      "effective_route": "deep_query"
+    },
+    "answer_kind": "factual",
+    "status": "completed",
+    "answer": "差旅报销应在费用发生后30天内提交。",
+    "claims": [
+      {
+        "text": "差旅报销应在费用发生后30天内提交。",
+        "evidence_ids": [
+          "E-44c44fe91efc40b49e76c8c85f789cbc"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E-44c44fe91efc40b49e76c8c85f789cbc",
+        "document_id": "D01",
+        "version_id": "D01-v1",
+        "version_date": "2026-03-01",
+        "section_id": "4.2",
+        "quote": "差旅报销应在费用发生后30天内提交。"
+      }
+    ],
+    "gaps": [],
+    "follow_up_question": null,
+    "conflict_assessments": [],
+    "warnings": [],
+    "error_code": null,
+    "stop_reason": "finished_with_evidence",
+    "snapshot_id": "snap-ff48f0c6b6ba4662bc4eb0f8e5e7aaa1",
+    "trace_id": "trace-req-1f1a0d40b922413281edba48a90c1cb1"
+  },
+  "trace": "runtime/traces/74656e616e742d41/req-1f1a0d40b922413281edba48a90c1cb1.jsonl"
+}

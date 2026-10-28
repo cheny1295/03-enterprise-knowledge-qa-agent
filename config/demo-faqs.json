@@ -1,0 +1,23 @@
+[
+  {
+    "tenant_id": "tenant-A",
+    "faq_topic_id": "reimbursement-deadline",
+    "canonical_question": "报销期限多久",
+    "aliases": ["报销申请期限"],
+    "required_conditions": [],
+    "source_refs": [
+      ["D01", "D01-v1", "4.2"],
+      ["D02", "D02-v1", "2.1"]
+    ],
+    "topic_complete": true
+  },
+  {
+    "tenant_id": "tenant-B",
+    "faq_topic_id": "reimbursement-deadline",
+    "canonical_question": "报销期限多久",
+    "aliases": ["报销申请期限"],
+    "required_conditions": [],
+    "source_refs": [["D01", "D01-v1", "1"]],
+    "topic_complete": true
+  }
+]

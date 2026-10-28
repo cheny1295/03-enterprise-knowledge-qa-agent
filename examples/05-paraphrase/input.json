@@ -1,0 +1,8 @@
+{
+  "question": "差旅费用产生后最迟多少天交报销申请",
+  "mode": "mock",
+  "trace": true,
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A"
+}

@@ -1,0 +1,8 @@
+{
+  "demo-user": {
+    "tenant-A": ["knowledge_reader", "knowledge_editor"]
+  },
+  "demo-bob": {
+    "tenant-B": ["knowledge_reader", "knowledge_editor"]
+  }
+}

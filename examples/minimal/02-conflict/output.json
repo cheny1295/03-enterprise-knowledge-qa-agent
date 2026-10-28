@@ -1,0 +1,89 @@
+{
+  "case": "02-conflict",
+  "description": "文档冲突：D01 与 D02 的期限不同",
+  "request": {
+    "question": "报销期限多久",
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "multi",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "output": {
+    "request_id": "req-37fdd871af954040a30d6b6bab98bd54",
+    "tenant_id": "tenant-A",
+    "routing": {
+      "route": "deep_query",
+      "reason": "clarification_required",
+      "faq_topic_id": "reimbursement-deadline",
+      "attempted_route": "deep_query",
+      "effective_route": "fallback"
+    },
+    "answer_kind": "clarification",
+    "status": "needs_clarification",
+    "answer": "当前已读取的制度存在未决冲突，请确认适用的制度范围或版本。",
+    "claims": [
+      {
+        "text": "差旅报销应在费用发生后30天内提交。",
+        "evidence_ids": [
+          "E-438c1ffa059e4dbe9e69a5ac0f5c0a85"
+        ]
+      },
+      {
+        "text": "差旅报销应在费用发生后15天内提交。",
+        "evidence_ids": [
+          "E-4b740430570c405095d1f5ee02a7dde1"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E-438c1ffa059e4dbe9e69a5ac0f5c0a85",
+        "document_id": "D01",
+        "version_id": "D01-v1",
+        "version_date": "2026-03-01",
+        "section_id": "4.2",
+        "quote": "差旅报销应在费用发生后30天内提交。"
+      },
+      {
+        "evidence_id": "E-4b740430570c405095d1f5ee02a7dde1",
+        "document_id": "D02",
+        "version_id": "D02-v1",
+        "version_date": "2026-04-01",
+        "section_id": "2.1",
+        "quote": "差旅报销应在费用发生后15天内提交。"
+      }
+    ],
+    "gaps": [
+      "适用制度或版本未明确"
+    ],
+    "follow_up_question": "请确认适用的制度范围或版本。",
+    "conflict_assessments": [
+      {
+        "assessment_id": "conflict-c707b72d413340db8657cf7af0254244",
+        "tenant_id": "tenant-A",
+        "request_id": "req-37fdd871af954040a30d6b6bab98bd54",
+        "snapshot_id": "snap-3d088ceb58264889ba99812ef8b668ec",
+        "candidate_ids": [
+          "C-047ca7b93c71488a94da7f5902f1b6d1",
+          "C-e1acb4816e724ad48793b86b5dc1639d"
+        ],
+        "evidence_ids": [
+          "E-438c1ffa059e4dbe9e69a5ac0f5c0a85",
+          "E-4b740430570c405095d1f5ee02a7dde1"
+        ],
+        "relation": "unresolved_conflict",
+        "basis_fields": [],
+        "unresolved_gaps": [
+          "适用条件或来源关系尚未确认"
+        ]
+      }
+    ],
+    "warnings": [],
+    "error_code": null,
+    "stop_reason": "clarification_required",
+    "snapshot_id": "snap-3d088ceb58264889ba99812ef8b668ec",
+    "trace_id": "trace-req-37fdd871af954040a30d6b6bab98bd54"
+  },
+  "trace": "runtime/traces/74656e616e742d41/req-37fdd871af954040a30d6b6bab98bd54.jsonl"
+}

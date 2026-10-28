@@ -1,0 +1,13 @@
+# Local credentials; keep the documented template.
+.env
+.env.*
+!.env.example
+
+# Python caches and environments.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Application state; checked-in examples/*/runtime traces remain visible.
+/runtime/

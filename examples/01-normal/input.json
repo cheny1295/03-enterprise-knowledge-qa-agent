@@ -1,0 +1,5 @@
+{
+  "mode": "mock",
+  "question": "报销期限多久",
+  "data": "data/single-document.jsonl"
+}

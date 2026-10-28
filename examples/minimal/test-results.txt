@@ -1,0 +1,10 @@
+Offline Mock only; no external LLM, CUDA or Qdrant.
+
+test_exhausted_model_or_tool_budget_returns_incomplete (__main__.MinimalExampleTests.test_exhausted_model_or_tool_budget_returns_incomplete) ... ok
+test_replacing_source_changes_answer_and_citation (__main__.MinimalExampleTests.test_replacing_source_changes_answer_and_citation) ... ok
+test_six_required_scenarios_write_matching_material (__main__.MinimalExampleTests.test_six_required_scenarios_write_matching_material) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.042s
+
+OK

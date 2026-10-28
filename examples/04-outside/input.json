@@ -1,0 +1,8 @@
+{
+  "question": "办公设备领用地点",
+  "mode": "mock",
+  "trace": true,
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A"
+}

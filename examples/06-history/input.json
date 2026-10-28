@@ -1,0 +1,12 @@
+{
+  "question": "那它的申请期限呢",
+  "conversation_history": [
+    {"role": "user", "content": "差旅报销有什么要求"},
+    {"role": "assistant", "content": "请具体说明想查询的制度事项。"}
+  ],
+  "mode": "mock",
+  "trace": true,
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A"
+}

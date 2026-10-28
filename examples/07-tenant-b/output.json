@@ -1,0 +1,38 @@
+{
+  "request_id": "req-f83a282c917544bca7ad7819f058f833",
+  "tenant_id": "tenant-B",
+  "routing": {
+    "route": "fast_faq",
+    "reason": "FAQ 来源与条件检查",
+    "faq_topic_id": "reimbursement-deadline",
+    "attempted_route": "fast_faq",
+    "effective_route": "fast_faq"
+  },
+  "answer_kind": "factual",
+  "status": "completed",
+  "answer": "B租户报销应在费用发生后60天内提交。",
+  "claims": [
+    {
+      "text": "B租户报销应在费用发生后60天内提交。",
+      "evidence_ids": ["E-41ef25f2eff84c949e01fed87a58d22c"]
+    }
+  ],
+  "citations": [
+    {
+      "evidence_id": "E-41ef25f2eff84c949e01fed87a58d22c",
+      "document_id": "D01",
+      "version_id": "D01-v1",
+      "version_date": "2026-03-01",
+      "section_id": "1",
+      "quote": "B租户报销应在费用发生后60天内提交。"
+    }
+  ],
+  "gaps": [],
+  "follow_up_question": null,
+  "conflict_assessments": [],
+  "warnings": [],
+  "error_code": null,
+  "stop_reason": "finished_with_evidence",
+  "snapshot_id": "snap-446d5e6c5acd49b691933efc31a9e04f",
+  "trace_id": "trace-req-f83a282c917544bca7ad7819f058f833"
+}

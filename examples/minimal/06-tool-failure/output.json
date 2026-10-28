@@ -1,0 +1,39 @@
+{
+  "case": "06-tool-failure",
+  "description": "工具失败：Search 不可用时返回 execution_error",
+  "request": {
+    "question": "报销期限多久",
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "output": {
+    "request_id": "req-a0922137c00240e0962254a283109473",
+    "tenant_id": "tenant-A",
+    "routing": {
+      "route": "deep_query",
+      "reason": "recoverable_error_exhausted",
+      "faq_topic_id": null,
+      "attempted_route": "deep_query",
+      "effective_route": "fallback"
+    },
+    "answer_kind": "fallback",
+    "status": "execution_error",
+    "answer": "指定来源未能读取，当前查询无法完成。",
+    "claims": [],
+    "citations": [],
+    "gaps": [
+      "来源读取未恢复"
+    ],
+    "follow_up_question": null,
+    "conflict_assessments": [],
+    "warnings": [],
+    "error_code": "source_unavailable",
+    "stop_reason": "recoverable_error_exhausted",
+    "snapshot_id": "snap-809a9943b19943b9bb1ac9e34c4876a5",
+    "trace_id": "trace-req-a0922137c00240e0962254a283109473"
+  },
+  "trace": "runtime/traces/74656e616e742d41/req-a0922137c00240e0962254a283109473.jsonl"
+}

@@ -1,0 +1,24 @@
+{
+  "request_id": "req-357dc622ec6640b4b0b2f1ef377fc9e2",
+  "tenant_id": "tenant-A",
+  "routing": {
+    "route": "deep_query",
+    "reason": "recoverable_error_exhausted",
+    "faq_topic_id": null,
+    "attempted_route": "deep_query",
+    "effective_route": "fallback"
+  },
+  "answer_kind": "fallback",
+  "status": "execution_error",
+  "answer": "指定来源未能读取，当前查询无法完成。",
+  "claims": [],
+  "citations": [],
+  "gaps": ["来源读取未恢复"],
+  "follow_up_question": null,
+  "conflict_assessments": [],
+  "warnings": [],
+  "error_code": "source_unavailable",
+  "stop_reason": "recoverable_error_exhausted",
+  "snapshot_id": "snap-3f4ae1c678174e3e88f05397fb1d8189",
+  "trace_id": "trace-req-357dc622ec6640b4b0b2f1ef377fc9e2"
+}

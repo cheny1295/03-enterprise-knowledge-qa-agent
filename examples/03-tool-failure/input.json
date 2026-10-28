@@ -1,0 +1,9 @@
+{
+  "question": "报销期限多久",
+  "mode": "mock",
+  "trace": true,
+  "fixture": "single",
+  "fault_injection": "UnavailableSearch: source_unavailable, retryable=True",
+  "principal": "demo-user",
+  "tenant": "tenant-A"
+}

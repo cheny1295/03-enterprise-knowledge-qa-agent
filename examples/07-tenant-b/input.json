@@ -1,0 +1,8 @@
+{
+  "question": "报销期限多久",
+  "mode": "mock",
+  "trace": true,
+  "fixture": "multi",
+  "principal": "demo-bob",
+  "tenant": "tenant-B"
+}

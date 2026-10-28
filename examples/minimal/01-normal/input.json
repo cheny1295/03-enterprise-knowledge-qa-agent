@@ -1,0 +1,12 @@
+{
+  "description": "明确答案：单一 D01 来源",
+  "request": {
+    "question": "报销期限多久",
+    "mode": "mock",
+    "trace": true
+  },
+  "fixture": "single",
+  "principal": "demo-user",
+  "tenant": "tenant-A",
+  "fault_injection": null
+}

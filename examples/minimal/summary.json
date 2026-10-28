@@ -1,0 +1,44 @@
+[
+  {
+    "case": "01-normal",
+    "status": "completed",
+    "stop_reason": "finished_with_evidence",
+    "output": "01-normal/output.json",
+    "trace": "01-normal/runtime/traces/74656e616e742d41/req-0fea7fbed070499e9f6255d3a066928b.jsonl"
+  },
+  {
+    "case": "02-conflict",
+    "status": "needs_clarification",
+    "stop_reason": "clarification_required",
+    "output": "02-conflict/output.json",
+    "trace": "02-conflict/runtime/traces/74656e616e742d41/req-37fdd871af954040a30d6b6bab98bd54.jsonl"
+  },
+  {
+    "case": "03-outside",
+    "status": "insufficient_evidence",
+    "stop_reason": "no_supporting_evidence",
+    "output": "03-outside/output.json",
+    "trace": "03-outside/runtime/traces/74656e616e742d41/req-90717b205bef44ebbf6d75ef8151c962.jsonl"
+  },
+  {
+    "case": "04-paraphrase",
+    "status": "completed",
+    "stop_reason": "finished_with_evidence",
+    "output": "04-paraphrase/output.json",
+    "trace": "04-paraphrase/runtime/traces/74656e616e742d41/req-7dd8d126d13141b78245c7cce56f8d09.jsonl"
+  },
+  {
+    "case": "05-history",
+    "status": "completed",
+    "stop_reason": "finished_with_evidence",
+    "output": "05-history/output.json",
+    "trace": "05-history/runtime/traces/74656e616e742d41/req-1f1a0d40b922413281edba48a90c1cb1.jsonl"
+  },
+  {
+    "case": "06-tool-failure",
+    "status": "execution_error",
+    "stop_reason": "recoverable_error_exhausted",
+    "output": "06-tool-failure/output.json",
+    "trace": "06-tool-failure/runtime/traces/74656e616e742d41/req-a0922137c00240e0962254a283109473.jsonl"
+  }
+]
